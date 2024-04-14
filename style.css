@@ -83,3 +83,27 @@ button > img {
   font-size: 28px;
   margin-top: -6px;
 }
+@media (max-width: 431px) {
+  .search input {
+    width: 190px;
+  }
+  .details {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0px;
+  }
+  .col {
+    width: 60px;
+    flex-basis: 50%; /* Sets the basis to 50%, allowing two items per line i.e both wind and humidity occupy equal space */
+    justify-content: center;
+  }
+  .humidity,
+  .wind {
+    font-size: 15px;
+    margin-top: -6px;
+  }
+  .wind {
+    white-space: nowrap; /* Prevents the text from wrapping onto the next line,if in of overflow,text will go outside the container */
+  }
+}
+
